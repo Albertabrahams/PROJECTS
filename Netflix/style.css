@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* background-image: url(./background_image.jpg);*/
+}
+
+#container{
+    width: 1240px;
+    height: 1036px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 30px;
+}
+
+#title{
+    color: white;
+    font-size: 3.1 rem;
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 0.05em;
+}
+
+span{
+    color: red;
+}
+
+#description{
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+header{
+    text-align: center;
+}
