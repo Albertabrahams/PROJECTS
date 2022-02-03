@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    color: #666666;
+    height: 100%;
+}
+
+.background__image1{
+    background-image: url(./images/bg1.jpg);
+    min-height: 100%;
+}
+
+.background__image2{
+    background-image: url(./images/bg2.jpg);
+    height: 80%;
+}
+.background__image3{
+    background-image: url(./images/bg3.jpg);
+    height: 80%;
+}
+.background__image4{
+    background-image: url(./images/bg4.jpg);
+    height: 80%;
+}
+
+.background__image1,
+.background__image2,
+.background__image3,
+.background__image4{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  /* for parallax  */
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed; /* for parallax  */
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.heading__container{
+    /* text-align: center;
+    top: 50%;
+    width: 100%;
+    position: absolute; */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.heading__container--heading{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline-offset: 1rem;
+    outline: 0.5rem inset purple;
+}
+
+.heading__container--logo{
+    width: 30%;
+}
+
+.heading__container--text{
+background-color: black;
+color: white;
+padding: 0.7rem;
+text-transform: capitalize;
+border-radius: 0.7rem 0rem 0.7rem 0rem;
+outline: 0.4rem inset purple;
+outline-offset: 0.2rem;
+}
+
+.section{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+.section__light{
+    background-color: #f1f1f1 ;
+    color: #666666;
+    line-height: 1.8rem;
+}
+.section__dark{
+    background-color: #282e34 ;
+    color: #fff;
+    line-height: 1.8rem;
+}
+
+@media(max-width:768px){
+    .heading__container{
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        
+    }
+    .heading__container--heading{
+        padding: 0.7rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        outline: 0.5rem inset purple;
+        outline-offset: 1rem;
+        
+    }
+
+    .heading__container--text{
+        padding: 0.7rem;
+        border-radius: 0.7rem 0rem 0.7rem 0rem;
+        outline: 0.4rem inset purple;
+        outline-offset: 0.2rem;
+        line-height: 3rem;
+        /* font-size: 0.5rem; */
+    }
+
+    .section{
+        padding: 1.5rem 2rem;
+    }
+    
+.heading__container--logo{
+
+    width: 50%;
+}
+    
+}
+
+@media(max-width:500px){
+    .background__image1,
+.background__image2,
+.background__image3,
+.background__image4{
+
+    background-attachment: scroll;
+
+} 
+}
