@@ -21,17 +21,13 @@ function history(){
 
 function addTodo(event){
     //Prevent form from submitting
-    if(todoInput.value==""){
-        alert("Enter a task!");
-        return;
-    }
     event.preventDefault();
     //Todo DIV
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     //Create LI
     const newTodo = document.createElement("li");
-    newTodo.innerText = todoInput.value.;
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
     
@@ -40,6 +36,10 @@ function addTodo(event){
     datem.innerText = history();
     datem.classList.add("datem");
     todoDiv.appendChild(datem);
+    if(todoInput.value==""){
+        alert("Enter a task!");
+        return;
+    }
     //Check Mark Button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = "<i class='fas fa-check'></i>";
