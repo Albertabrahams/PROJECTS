@@ -18,6 +18,7 @@ function history(){
 }
 
 
+
 function addTodo(event){
     //Prevent form from submitting
     if(todoInput.value==""){
