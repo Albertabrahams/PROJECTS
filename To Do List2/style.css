@@ -23,6 +23,11 @@ header,form{
     align-items: center;
 }
 
+img{
+    width: 60px;
+    height: 60px;
+}
+
 form input, form button{
     padding: 0.5rem;
     font-size: 2rem;
@@ -58,6 +63,7 @@ form button:hover{
     background: white;
     color: black;
     font-size: 1.5rem;
+    font-weight: 900;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,6 +72,15 @@ form button:hover{
 
 .todo li{
     flex: 1;
+}
+
+::placeholder{opacity: 0.5;
+font-weight: 500;
+font-size: 1.3rem;}
+
+.datem{
+    background: chartreuse;
+    padding: 0.43rem;
 }
 
 .trash-btn, .complete-btn{
@@ -136,6 +151,6 @@ select{
 @media(max-width:500px){
     *{
         font-size: 8px;
-        
+
     }
 }

@@ -11,18 +11,34 @@ filterOption.addEventListener("click", filterTodo);
 
 
 //Functions
+function history(){
+    var today = new Date();
+    var realdate=today.getDate()+"."+(today.getMonth()+1)+"."+today.getFullYear().toString().slice(2,4);
+    return (realdate)
+}
+
 
 function addTodo(event){
     //Prevent form from submitting
+    if(todoInput.value==""){
+        alert("Enter a task!");
+        return;
+    }
     event.preventDefault();
     //Todo DIV
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     //Create LI
     const newTodo = document.createElement("li");
-    newTodo.innerText = todoInput.value;
+    newTodo.innerText = todoInput.value.;
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
+    
+    // Create Date
+    const datem = document.createElement("span");
+    datem.innerText = history();
+    datem.classList.add("datem");
+    todoDiv.appendChild(datem);
     //Check Mark Button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = "<i class='fas fa-check'></i>";
