@@ -20,6 +20,17 @@ const pmButton = document.querySelector(".pm");
 const percentButton = document.querySelector(".percent");
 const prevDisp = document.querySelector(".previous-display");
 const currDisp = document.querySelector(".current-display");
+const time = document.querySelector(".time")
+
+const times=()=>{
+    let datem=new Date();
+    minutes=datem.getMinutes().toString().padStart(2,"0");
+    hours = datem.getHours().toString().padStart(2,"0");
+    seconds= datem.getSeconds().toString().padStart(2,"0");
+    time.innerHTML=`${hours}:${minutes}:${seconds}`
+}
+setInterval(times,1000)
+
 
 // Operator variables
 let previousOperand = "";
@@ -54,8 +65,8 @@ equalsButton.addEventListener("click", () => {
 
 //? All Clear(AC) button event
 acButton.addEventListener("click", () => {
-  clear();
-  updateDisplay();
+        clear();
+        updateDisplay();
 });
 
 //? plus-minus(+-) button event
@@ -101,7 +112,6 @@ const appendNumber = (num) => {
 //? Display the numbers and computation
 const updateDisplay = () => {
   //? if computation or number is too long, it trims
-
   if (currentOperand.toString().length > 12) {
     currentOperand = currentOperand.toString().slice(0, 12);
   }
