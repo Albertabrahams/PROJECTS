@@ -1,22 +1,3 @@
-alert("Hey there! Thanks for checking this code out. Turn on sounds for a better experience. If there's any errors, please let me know!");
-alert("Woooooow people! Thanks for freaking 3.3K thumbs up!")
-
-// Special thanks to Ulisses Cruz for fixing my problems ;) 
-// Special thanks to Utkarsh for suggesting sounds
-// Music is from Lucas King: https://www.youtube.com/watch?v=7JIdJLkJ0S4
-// Thanks for the likes and comments! 
-// Made by Maart (dont copy without my permission!)
-
-/* Highest ranks:
-* #2 in trending (all languages)
-* #6 in most popular (all languages)
-* #3 in most popular (web)
-And that wouldn't be possible without YOUR support, so thank you so much!
-*/
-
-//TO DO: different options for different doors
-    
-
 function Direction(Choice){
 // The choice of the first buttons 
     
