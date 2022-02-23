@@ -69,6 +69,7 @@ buttons.addEventListener('click', (event) => {
       primaryDisplay.innerHTML = '-' + primaryValue;
   }
 
+  
   // . tuşuna basıldıysa
   if (event.target.classList.contains('decimal')) {
     // ekrandaki sayıda hali hazırda . işareti var mı diye bakıyorum
