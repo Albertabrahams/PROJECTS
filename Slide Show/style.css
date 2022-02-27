@@ -1,0 +1,11 @@
+
+#back{
+    float: left;
+    position: relative;
+    top: 300px;
+}
+#forward{
+    float: right;
+    position: relative;
+    top: 300px;
+}
