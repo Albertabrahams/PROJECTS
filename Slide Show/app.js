@@ -8,6 +8,7 @@ forward.addEventListener("click", ()=>{
     count++
     if (count==arr.length){count=0;}
     img.src=arr[count]
+    
 })
 
 back.addEventListener("click", ()=>{
