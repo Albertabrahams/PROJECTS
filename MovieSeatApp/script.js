@@ -60,5 +60,7 @@ const displaySeats = () => {
             seat.classList.add("selected");
         }
     })};
+    
+
 
 }
