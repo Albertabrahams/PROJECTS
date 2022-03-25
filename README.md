@@ -1,6 +1,6 @@
 # PROJECTS
 1-https://albertabrahams.github.io/PROJECTS/AgeCalculator <br>
-2-https://albertabrahams.github.io/PROJECTS/Checkout Project <br>
+2-https://albertabrahams.github.io/PROJECTS/CheckoutProject <br>
 3-https://albertabrahams.github.io/PROJECTS/DigitalClock <br>
 4-https://albertabrahams.github.io/PROJECTS/GuessTheNumber <br>
 5-https://albertabrahams.github.io/PROJECTS/IosCalculator <br>
